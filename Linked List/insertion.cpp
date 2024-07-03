@@ -37,7 +37,7 @@ int getLength(Node* head) {
 
 void insertAtPosition(Node* &head, int value,int pos,Node* &tail){
   
-   if(pos <= 1) {
+   if(pos == 1) {
      insertAtHead(head,tail,value);
    } else if(pos > getLength(head)) {
      insertAtTail(head,tail,value);
